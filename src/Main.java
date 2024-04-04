@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //    String a = "Pera";
+        //    String a = "Pera";     //main je izvrsna metoda a ova varijabla je lokalna
         //zbog ovog ispod imamo prazan konstruktor tamo u klasi student
 
         Student student = new Student(); // new Sudent-----> je pokazivac na mesto u memoriji

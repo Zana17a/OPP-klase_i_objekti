@@ -1,6 +1,6 @@
 public class Student {
     //polja
-    String ime;
+    String ime;  // sve sto se nalazi na nivou klase to je globalna varijabla, i svaka metoda i konstruktor vidi ove varijable
     String prezime;
     int godine;
     String indexNum;
@@ -27,7 +27,8 @@ public class Student {
     }
 
     public String ispis2(){
-        return "Student{" + "ime='" + ime + '\'' +
+        String ime = "Zika"; // lokalna varijabla nadjaca globalnu, uvek ce ime ovom metodom biti Zika,
+           return "Student{" + "ime='" + this.ime + '\'' +  //sad je greyed out lokalna varijavla ime, zato sto ovde stoji THIS.IME sto znaci uzmi globalnu varijablu
                 ", prezime='" + prezime + '\'' +
                 ", godine=" + godine +
                 ", indexNum='" + indexNum + '\'' +
@@ -37,8 +38,8 @@ public class Student {
         System.out.println("Zbir dva broja: " + (a + b));
     }
 
-    public int zbirDvaBroja2  (int a, int b) {      //ovo mogu da spakujem u varijablu sum
-        return a + b;
+    public int zbirDvaBroja2  (int c, int d) {      //ovo mogu da spakujem u varijablu sum
+        return c + d;                   // c i d su lokalne varijable koje se prave i definisu i inicijalizuju u okviru metode
         }
     public Student(String ime, String prezime, String indexNum) {
         this.ime = ime;
