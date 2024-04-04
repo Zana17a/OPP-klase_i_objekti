@@ -18,11 +18,29 @@ public class Main {
         Student student1 = new Student("John", "Smith", 21);
         Student student2 = new Student("John", "Smith", 19);
         Student student3 = new Student("Zana","Arezina");
+        Student student4 = new Student("Pera", "Peric", "117/08");
+        System.out.println(student1);
+        System.out.println(student4);
+        student4.ispis2();
+        System.out.println("ispisi metodom ispis 2: " + student4.ispis2());
+
 
         student.zbirDvaBroja(2,3);
-        student.ispis();
-        student1.ispis();
         student1.zbirDvaBroja(5,6);
+
+
+        int sum = student.zbirDvaBroja2(22,2);
+        System.out.println("zbir dva broja druga metoda: " + sum);
+
+
+        student.ispis(); // ispise lepo posto je metoda ispis void
+
+        student1.ispis2(); //ne ispise nista nije void
+        String ispis2 = student1.ispis2(); // nema void nego podatke koji su STRING moramo u varijablu da ubacimo
+        System.out.println("Ispis2: " + ispis2); // i sad ispis varijablje koja ima vrednost
+
+
+
 
 
 //        Scanner sc= new Scanner(System.in);
