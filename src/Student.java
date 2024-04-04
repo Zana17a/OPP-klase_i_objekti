@@ -1,8 +1,10 @@
 public class Student {
     //polja
+
     String ime;  // sve sto se nalazi na nivou klase to je globalna varijabla, i svaka metoda i konstruktor vidi ove varijable
-    String prezime;
-    int godine;
+    String prezime; // ovo su takodje referentne varijable koje pripadaju objektu Student
+    static int godine;
+//    int godine;
     String indexNum;
 
     //konstruktori - mehanizam za kreiranje objekata (uvek nosi isto ime kao klasa)
@@ -34,11 +36,11 @@ public class Student {
                 ", indexNum='" + indexNum + '\'' +
                 '}';
     }
-    public void zbirDvaBroja (int a, int b){            //zbog void mogu da isprintam reziltat ali ne mogu da ga smestim u varijablu
+    public static void zbirDvaBroja (int a, int b){            //zbog void mogu da isprintam reziltat ali ne mogu da ga smestim u varijablu
         System.out.println("Zbir dva broja: " + (a + b));
     }
 
-    public int zbirDvaBroja2  (int c, int d) {      //ovo mogu da spakujem u varijablu sum
+    public static int zbirDvaBroja2  (int c, int d) {      //ovo mogu da spakujem u varijablu sum
         return c + d;                   // c i d su lokalne varijable koje se prave i definisu i inicijalizuju u okviru metode
         }
     public Student(String ime, String prezime, String indexNum) {
