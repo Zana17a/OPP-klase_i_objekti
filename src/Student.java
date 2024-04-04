@@ -2,8 +2,8 @@ public class Student {
     //polja
 
     String ime;  // sve sto se nalazi na nivou klase to je globalna varijabla, i svaka metoda i konstruktor vidi ove varijable
-    String prezime; // ovo su takodje referentne varijable koje pripadaju objektu Student
-    static int godine;
+    String prezime; // ovo su takodje instancne varijable koje pripadaju objektu Student
+    static int godine;  // u Main gde smo stavili Student.godine =18;    svima ce da dodeli 18 god.
 //    int godine;
     String indexNum;
 
