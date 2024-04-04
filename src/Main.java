@@ -1,7 +1,12 @@
 import java.util.Scanner;
 
 public class Main {
+
+    static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
+        System.out.println( "Unos tastaturom: " );
+        int upis= scanner.nextInt();
 
         //    String a = "Pera";     //main je izvrsna metoda a ova varijabla je lokalna
         //zbog ovog ispod imamo prazan konstruktor tamo u klasi student
@@ -49,6 +54,10 @@ public class Main {
         student1.ispis2(); //ne ispise nista nije void, mora u varijablu da se smesti
         String ispis2 = student1.ispis2(); // nema void nego podatke koji su STRING moramo u varijablu da ubacimo
         System.out.println("Ispis2: " + ispis2); // i sad ispis varijablje koja ima vrednost
+
+        String randomMail = Utils.getRendomEmail();
+        System.out.println(randomMail);
+        System.out.println(Utils.getRendomEmail());
 
 
 
